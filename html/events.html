@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wheels & Beats</title>
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="../css/styles.css">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+        <!-- Font -->
+        <link rel="stylesheet" href="https://use.typekit.net/grg5mnc.css">
+        
+        <!-- Ico -->
+        <link rel="icon" href="../images/logo.ico">    
+    </head>
+    <body>
+        <div id="circle"></div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-propio" id="top">
+            <div class="container-fluid">
+                <div>
+                    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./visualizer.html">Visualizer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signin.html">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="titulo">
+            <h1>Events</h1>
+        </div>
+
+        <!--
+        <div class="container">
+            <h3 class="mb-3">Here you can find some songs to hear on your next meeting.</h3>
+            <div class="row">
+                <div class="col-md-12 audio-player card bg-secondary my-3 p-4">
+                    <h4>Fun song</h4>
+                    <audio controls>
+                        <source src="../audio/fun.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-12 audio-player  card bg-secondary my-3 p-4">
+                    <h4>Happy song</h4>
+                    <audio controls>
+                        <source src="../audio/happy.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-12 audio-player  card bg-secondary my-3 p-4">
+                    <h4>Rap song</h4>
+                    <audio controls>
+                        <source src="../audio/rap.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-md-12 audio-player  card bg-secondary my-3 p-4">
+                    <h4>Reggaeton song</h4>
+                    <audio controls>
+                        <source src="../audio/reggaeton.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <div class="container">
+            <div class="row">
+                <!-- Left Column with Buttons -->
+                <div class="col-md-6 vertical justify-content-center align-items-center .gap-4">
+                    <button type="button" class="btn btn-secondary" onclick="loadAudio('audio1', audio), audioDuration(audio, length),timeRemaining(audio, timeRemaining),urlAudio(audio, url),updateStatePause(audio, state)">Fun song</button>
+                    <button type="button" class="btn btn-secondary" onclick="loadAudio('audio2', audio), audioDuration(audio, length),timeRemaining(audio, timeRemaining),urlAudio(audio, url),updateStatePause(audio, state)">Happy song</button>
+                    <button type="button" class="btn btn-secondary" onclick="loadAudio('audio3', audio), audioDuration(audio, length),timeRemaining(audio, timeRemaining),urlAudio(audio, url),updateStatePause(audio, state)">Rap song</button>
+                    <button type="button" class="btn btn-secondary" onclick="loadAudio('audio4', audio), audioDuration(audio, length),timeRemaining(audio, timeRemaining),urlAudio(audio, url),updateStatePause(audio, state)">Reggaeton song</button>
+                    <button type="button" class="btn btn-secondary" onclick="loadAudio('audio5', audio), audioDuration(audio, length),timeRemaining(audio, timeRemaining),urlAudio(audio, url),updateStatePause(audio, state)">Jazz song</button>
+                </div>
+                <!-- Right Column with Headings -->
+                <div class="col-md-6 vertical justify-content-center align-items-center .gap-4">
+                    <audio id="audio" controls onplay="updateStatePlay(audio, state)" onpause="updateStatePause(audio, state)">
+                        <source src="../audio/fun.mp3" type="audio/mp3">
+                    </audio>
+                    <div id="length">Length of the audio: 1 minutes 49 seconds</div>
+                    <div id="timeRemaining">Time remaining: 1 minutes 47 seconds</div>
+                    <div id="url">Audio source:</div>
+                    <div id="state">State of the audio:</div>
+                </div>
+            </div>
+        </div>
+
+        <audio src=""></audio>
+
+        <!-- 
+            Fun : https://pixabay.com/es/music/late-fun-life-112188/
+            Happy : https://pixabay.com/es/music/melodias-para-ninos-felices-happiness-129206/
+            Rap : https://pixabay.com/es/music/late-best-time-112194/
+            Reggaeton : https://pixabay.com/es/music/afrobeat-energetic-music-dance-background-hip-hop-latin-reggaeton-150280/
+            Jazz : https://pixabay.com/es/music/optimista-catch-it-117676/
+
+        -->
+
+
+
+        <!-- Script -->
+        <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    </body>
+</html>
