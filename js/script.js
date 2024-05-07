@@ -1,3 +1,51 @@
+class Cabecera extends HTMLElement {
+    constructor() {
+        super()
+        this.innerHTML = `        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-propio" id="top">
+            <div class="container-fluid">
+                <div>
+                    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./events.html">Events</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./roadGame.html">Road Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./visualizer.html">Visualizer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signin.html">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>`
+    }
+}
+window.customElements.define('mi-nav', Cabecera);
+
+
+
 // Circulo del cursor
 const circle = document.getElementById('circle');
 
