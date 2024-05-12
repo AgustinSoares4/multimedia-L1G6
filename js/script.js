@@ -28,6 +28,9 @@ class Cabecera extends HTMLElement {
                             <a class="nav-link" href="./visualizer.html">Visualizer</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./globalData.html">Data</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
