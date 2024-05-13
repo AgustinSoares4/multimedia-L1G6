@@ -20,16 +20,54 @@
         <link rel="icon" href="../images/logo.ico">
 
         <!-- Leaflet -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-                
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />           
 
     </head>
     <body>
         <div id="circle"></div>
 
-        <mi-nav></mi-nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-propio" id="top">
+            <div class="container-fluid">
+                <div>
+                    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./events.html">Events</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./roadGame.html">Road Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./visualizer.html">Visualizer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./globalData.html">Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signin.html">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <div class="titulo">
             <h1>Contact us</h1>
@@ -53,6 +91,10 @@
                 </div>
             </div>
         </div>
+
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
         <!-- Script -->
         <script>
