@@ -39,6 +39,14 @@
         article {
             margin-top: 90px;
         }   
+
+        #explanation {
+            position: fixed;
+            top: 250px;
+            left: 0;
+            color: white;
+            padding: 30px;
+        }
     </style>
 
 </head>
@@ -46,6 +54,20 @@
 <body>
     
     <mi-nav></mi-nav>
+
+    <div id="explanation">
+        <h3>Information about countries </h3>
+        <p><b>Number of events done</b></p>
+        <ul>
+            <li>1. More than 200 events.</li>
+            <li>2. Between 101 and 200 events.</li>
+            <li>3. Between 51 and 100 events.</li>
+            <li>4. Between 21 and 50 events.</li>
+            <li>5. Between 11 and 20 events.</li>
+            <li>6. Between 6 and 10 events.</li>
+            <li>7. Less than 5 events.</li>
+        </ul>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.2.1/d3.min.js"></script>
     <script src="../js/script.js"></script>
